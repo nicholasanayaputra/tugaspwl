@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4b5563;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  padding: 20px 7%;
+}
+
+nav .nav-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+nav .nav-list a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+  font-size: 18px;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tour {
+  margin: auto;
+  padding: 20px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tour h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tour .tour-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+.tour .tour-card img {
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 280px;
+  height: 280px;
+}
+.card {
+  background-color: #282c34;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
